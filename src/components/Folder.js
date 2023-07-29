@@ -10,7 +10,7 @@ function Folder({ explorer }) {
                 
                 <div style={{ display: expand ? "block" : "none", paddingLeft: 15 }}>
                     {explorer.items.map(exp => {
-                        return <Folder explorer={exp} />;
+                        return <Folder key={exp.name} explorer={exp} />;
                         })}
                         
                 </div>
