@@ -17,7 +17,7 @@ function Folder({ explorer }) {
             </div>
         );
     } else {
-       return <span>{ explorer.name }</span>;
+       return <span>{ explorer.name }<br/></span>;
     }
     
 }
